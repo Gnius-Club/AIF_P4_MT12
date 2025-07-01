@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P4-TM12</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 12 4to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>A.I. Lens (Learn): Entrenar "ID2". Clear learned objects.</li>
+                                        <li>GCS: Reaccionar diferente a ID1 vs ID2.</li>
+                                        <li>IA: Múltiples clases. Concepto de "Confianza" (get learn object ID1 Confidence).</li>
+                                        <li>Parte de la Currícula de IA cubierta: AIA: Introducción al ML: Múltiples clases, confianza.</li>
+                                        <li>Objetivo General de la Sesión: Que los estudiantes aprendan a entrenar a la Smart A.I. Lens para reconocer un segundo objeto ("ID2"), programen al Cutebot para reaccionar de manera diferente a "ID1" y "ID2", y se introduzcan conceptualmente a la idea de que la IA puede tener un nivel de "confianza" en sus predicciones.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li>⚡ Actividad 1: Saludo de I.A. con todos</li>
+                                        <li>⚡ Actividad 2: I Can Statement + Ejemplificación</li>
+                                        <li>⚡ Actividad 3: AI GYM</li>
+                                        <li>⚡ Actividad 4: Brain Spark</li>
+                                        <li>⚡ Actividad 5: Gnius STORM (Think-Pair-Share)</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Modelos de IA entrenados en la Smart A.I. Lens para reconocer dos objetos diferentes elegidos por el estudiante (ID1 e ID2).</li>
+                                        <li>Programa en Micro:bit donde el Cutebot reacciona de forma distinta cuando la A.I. Lens detecta ID1 vs. ID2, y opcionalmente muestra el nivel de confianza de la detección.</li>
+                                        <li>Participación en la discusión sobre múltiples clases, confianza de la IA y su utilidad.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Agente Gnius" (Xolo) activo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                        <li>Robots Cutebot (1 por cada 2 estudiantes, con A.I. Lens conectada).</li>
+                                        <li>Smart A.I. Lens (1 por cada 2 estudiantes, conectada al Cutebot).</li>
+                                        <li>Micro:bits y baterías (1 por cada 2 estudiantes).</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>), con extensión de A.I. Lens.</li>
+                                        <li>Dos objetos simples y claramente diferentes por estudiante/pareja para entrenar como ID1 e ID2 (ej. borrador y sacapuntas).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de MakeCode y la extensión de A.I. Lens (bloques `Learn an object`, `Image contains learned objects`, `Clear learned objects`, y `get learn object Confidence`).</li>
+                                                <li>Asegurar disponibilidad, carga y conexión de Cutebots, A.I. Lens y Micro:bits.</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                                <li>Tener listos los dos objetos diferentes para tu demostración.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad. Practica el entrenamiento de dos objetos y el uso del bloque de confianza.</li>
+                                        <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional tu proyecto de ejemplo (Cutebot reaccionando de una manera al objeto 'ID1' y de otra al objeto 'ID2', y si es posible, mostrando la confianza) para la demostración en la Actividad 2.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>El chatbot da la bienvenida y anticipa que la A.I. Lens aprenderá más objetos y expresará "confianza".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Saludo de I.A. con todos ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 2). Da la bienvenida a los alumnos, recordando el entrenamiento de un objeto y adelantando el nuevo desafío. Pídeles que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, super entrenadores de IA! Ya son expertos en enseñarle a nuestra A.I. Lens a reconocer un objeto. Pero, ¿qué tal si le enseñamos a reconocer DOS objetos diferentes? ¡Y aún más emocionante, ¿qué tal si la lente pudiera decirnos qué tan 'segura' está de que realmente es el objeto que cree que es?! Hoy vamos a ampliar el cerebro de nuestra IA. Antes de empezar, activen a Xolo. Salúdenlo en el chat con su nombre y sus gustos. Por ejemplo: 'Hola Xolo, soy [Nombre] y me gustan los juegos de memoria y los detectives'."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Saludo de I.A. con todos ⏰ 2.5 minutos</h3>
+                            <p>Monitorea a los alumnos mientras interactúan con Xolo. Asegúrate de que todos reciban una respuesta y resuelve cualquier problema técnico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Xolo está listo para esta misión de doble aprendizaje y medición de confianza. Si alguien no ha recibido respuesta de Xolo, levante la mano.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
+                <p>Presentar el entrenamiento de un segundo objeto (ID2), la reacción diferenciada y el concepto de "confianza" de la IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introducción y Contextualización ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3). Introduce la idea de entrenar un segundo objeto (ID2) y cómo Cutebot podrá distinguirlo de ID1, además de introducir el concepto de "confianza".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ya tenemos nuestro 'ID1' (por ejemplo, el borrador). Hoy vamos a elegir un segundo objeto diferente, como este sacapuntas, y le enseñaremos a la lente a reconocerlo como 'ID2'. Luego, programaremos a Cutebot para que, si ve el borrador ('ID1'), haga una cosa, y si ve el sacapuntas ('ID2'), haga otra cosa completamente diferente. ¡Podrá distinguir entre ellos! Además, vamos a hablar de algo llamado 'confianza'. A veces, la IA puede estar muy segura de lo que ve, y otras veces, un poco dudosa. Hay formas de saber qué tan confiada está.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Presentación del Proyecto del Profesor ⏰ 1 minuto</h3>
+                            <p>Muestra tu proyecto de ejemplo (Cutebot reaccionando diferente a ID1 e ID2, y si es posible, mostrando la confianza) ya cargado y funcionando. Esta es una demostración en vivo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Miren este ejemplo: (Muestra el Cutebot reaccionando de una manera al objeto 'ID1' y de otra al objeto 'ID2'. Si tienes el bloque de confianza, muestra cómo cambia). Mi 'idea (vibe)' fue que Cutebot fuera un clasificador de objetos y que supiéramos qué tan seguro estaba.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "I Can Statement" y Conexión ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4). Presenta formalmente el 'I Can Statement'.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy vamos a enseñar a la A.I. Lens un segundo objeto y haremos que Cutebot reaccione diferente a cada uno. Al final de la clase, podrán decir: '<strong>Yo puedo enseñarle a mi A.I. Lens a reconocer dos objetos diferentes, hacer que Cutebot reaccione de forma distinta a cada uno, y entiendo que la IA puede tener un nivel de confianza en lo que reconoce.</strong>' ¡A expandir la inteligencia de nuestra IA!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 7 minutos</h2>
+                <p>Introducir el entrenamiento de ID2, el comando `Clear learned objects`, la reacción a ID1 vs ID2, y los conceptos de múltiples clases y confianza de la IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción Inicial y Contextualización de la IA ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 5). Presenta el A.I. GYM y da la instrucción para que los alumnos pidan la información a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, al A.I. GYM! 🧠💪 Xolo nos explicará cómo enseñar un segundo objeto (ID2), cómo borrar lo aprendido si es necesario, cómo reaccionar diferente a ID1 e ID2, y los conceptos de "múltiples clases" y "confianza" de la IA. Escriban en el chat: 'Mi perfil es [escribe aquí tus gustos/intereses] y quiero aprender a entrenar un ID2, sobre borrar objetos aprendidos, reaccionar a ID1 vs ID2, y qué son las múltiples clases y la confianza en IA'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Interacción Guiada y Ejemplo de Plan (GCS) ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositivas 6 y 7). Monitorea a los alumnos. Xolo les explicará cómo enseñar 'ID2', usar `Clear learned objects`, la lógica para diferenciar reacciones, y los conceptos de múltiples clases y el nivel de confianza de la IA (ej. con `get learn object ID1 Confidence`).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Excelente! Xolo les está contando los puntos clave para hoy: cómo enseñar un segundo objeto ('ID2'), la utilidad del comando `Clear learned objects`, y cómo programar reacciones diferentes para ID1 e ID2. Además, les introducirá a dos ideas muy importantes: que la IA puede aprender a distinguir entre varias 'clases' o categorías de objetos, y que puede darnos un porcentaje de 'confianza' sobre lo que reconoce.</p>
+                                <p class="dialogue assistant">Para que vean un ejemplo de GCS para entrenar y reaccionar a dos objetos mostrando confianza, Xolo podría presentarles esto:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+AL INICIO:
+    Initialize AI-Lens
+    Clear learned objects // Empezar limpio
+    mostrar texto "Entrena A->ID1, Agitar->ID2"
+
+CUANDO SE PRESIONE EL BOTÓN A:
+    Learn an object with: ID1
+    mostrar texto "Aprendi ID1"
+
+CUANDO SE AGITE: // Usar otro evento para ID2
+    Learn an object with: ID2
+    mostrar texto "Aprendi ID2"
+
+POR SIEMPRE:
+    SI (Image contains learned objects: ID1):
+        cutebot_avanzar(30)
+        fijar variable "conf" a get learn object ID1 Confidence
+        mostrar cadena "ID1: " + variable "conf" + "%"
+        ESPERAR 1 segundo
+    SINO SI (Image contains learned objects: ID2):
+        cutebot_retroceder(30)
+        fijar variable "conf" a get learn object ID2 Confidence
+        mostrar cadena "ID2: " + variable "conf" + "%"
+        ESPERAR 1 segundo
+    SINO:
+        cutebot_detener()
+        limpiar pantalla // Limpia si no ve nada conocido
+    FIN SI
+    ESPERAR 0.2 segundos
+                                </pre>
+                                <p class="dialogue assistant">Si tienen dudas, ¡pregúntenle a Xolo! Por ejemplo: <br>
+                                <strong>* 'Xolo, ¿puedo enseñar más de dos objetos?'</strong><br>
+                                <strong>* 'Si la confianza es baja, ¿qué significa?'</strong> (Relacionar con sus gustos) <br>
+                                <strong>* '¿Para qué usan los programadores la confianza de la IA?'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Selección y entrenamiento de ID1 e ID2, programación de reacciones diferenciadas y exploración de la confianza.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Introducción al Brain Spark y Preparación del Experimento ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 8). Presenta la actividad. Guía a los alumnos para elegir dos objetos claramente diferentes. Indica que la 'idea (vibe)' del objeto y su reacción son individuales, pero deberán coordinarse en pareja para usar el material compartido y realizar los turnos de programación y las rondas de entrenamiento para los objetos de cada uno.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, súper entrenadores! Ahora al Brain Spark. Cada uno elegirá DOS objetos claramente diferentes para enseñarle a la A.I. Lens (serán su ID1 e ID2). Programarán reacciones distintas para cada uno y ¡exploraremos la confianza de la IA! Aunque la elección de objetos y las reacciones son ideas individuales, recuerden que comparten el material en pareja. Deberán organizarse para los turnos de programación y para entrenar los dos objetos de cada uno.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideación (La "idea (vibe)" de Reacciones y Confianza) y Planificación con IA ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 9). Anima a los alumnos a definir reacciones para ID1 e ID2 y cómo quieren usar la confianza. Guíalos para obtener su GCS de Xolo, incluyendo `Clear learned objects` y la lógica para entrenar/reaccionar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¿Ya tienen sus dos objetos? ¡Perfecto! Piensen: 'Quiero que si Cutebot ve mi ID1 (ej. borrador), avance. Si ve mi ID2 (ej. sacapuntas), retroceda. Y quiero ver qué tan 'seguro' está cuando los ve.' Esta es su 'idea (vibe)'. Descríbansela a Xolo para obtener su GCS. Recuerden pedir que incluya `Clear learned objects` al inicio, y cómo entrenar ID1 con Botón A e ID2 con otro evento (como Agitar o Botón B).</p>
+                                <p class="dialogue assistant">Xolo podría generar un GCS como el que vimos en el A.I. GYM, que borra, entrena con dos eventos diferentes y luego, en un `POR SIEMPRE`, reacciona a ID1 o ID2 mostrando su confianza.</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+AL INICIO:
+    Initialize AI-Lens
+    Clear learned objects
+    mostrar texto "Entrena ID1 y ID2"
+
+CUANDO SE PRESIONE EL BOTÓN A:
+    Learn an object with: ID1
+    mostrar texto "Aprendiendo ID1..."
+
+CUANDO SE PRESIONE EL BOTÓN SHAKE: // O Botón B
+    Learn an object with: ID2
+    mostrar texto "Aprendiendo ID2..."
+
+POR SIEMPRE:
+    fijar variable "confianza_ID1" a 0 // Reiniciar para visualización
+    fijar variable "confianza_ID2" a 0 // Reiniciar para visualización
+
+    SI (Image contains learned objects: ID1):
+        cutebot_avanzar(50)
+        cutebot_todos_los_led(VERDE)
+        fijar variable "confianza_ID1" a get learn object ID1 Confidence
+        mostrar cadena "ID1: " + variable "confianza_ID1" + "%"
+    SINO SI (Image contains learned objects: ID2):
+        cutebot_retroceder(50)
+        cutebot_todos_los_led(AZUL)
+        fijar variable "confianza_ID2" a get learn object ID2 Confidence
+        mostrar cadena "ID2: " + variable "confianza_ID2" + "%"
+    SINO:
+        cutebot_detener()
+        cutebot_apagar_leds()
+        limpiar pantalla
+    FIN SI
+    ESPERAR 0.5 segundos
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación, Entrenamiento y Prueba de Reacciones/Confianza ⏰ 10 minutos</h3>
+                            <p>Da tiempo para implementar el código, entrenar ID1 e ID2 (mostrando desde distintos ángulos) y verificar reacciones. Observan los valores de confianza.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡A programar y a ser entrenadores de dos objetos! Tomen su GCS y constrúyanlo. Usen `Clear learned objects` para empezar de cero. Entrenen su ID1 con el Botón A y su ID2 con el otro evento, mostrando los objetos varias veces y desde distintos ángulos. Luego, prueben si Cutebot reacciona correctamente a cada objeto y observen los valores de confianza que muestra el Micro:bit. Recuerden turnarse para entrenar y probar los objetos de ambos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Experimentación con la Confianza ⏰ 2 minutos</h3>
+                            <p>Guía a los alumnos para experimentar: ¿Qué pasa si el objeto está tapado, con mala luz? ¿La IA confunde ID1 con ID2? ¿Qué pasa con un objeto no entrenado?</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, ¡a investigar la confianza! ¿Qué pasa con el porcentaje de confianza si el objeto está un poco tapado o con mala luz? ¿Alguna vez la IA confunde su ID1 con su ID2? ¿Qué nivel de confianza muestra si le ponen un objeto que no le enseñaron? Anoten mentalmente sus observaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Mejoras y Desafíos ⏰ 1 minutos</h3>
+                            <p>Ofrece desafíos adicionales.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¿Su IA ya distingue bien sus dos objetos y entienden su confianza? ¡Genial! Para un desafío extra: ¿Pueden hacer que Cutebot solo actúe si la confianza es mayor a un cierto porcentaje (ej. 70%)? ¡Consulten con Xolo cómo añadir esa condición a su GCS!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Los alumnos muestran cómo Cutebot distingue ID1 e ID2, observan la confianza y discuten su utilidad.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 10). Presenta la actividad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, entrenadores de IA de múltiples talentos! Han enseñado a su A.I. Lens a ser una experta en dos objetos y hasta a medir su seguridad. En nuestro Gnius STORM, compartiremos estos avances.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 0.5 minutos</h3>
+                            <p>Reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Antes de mostrarlo, piensen 30 segundos: <strong>¿Cómo distingue su Cutebot entre su ID1 y su ID2? ¿Les sorprendió que la IA pudiera expresar su nivel de seguridad (confianza)? ¿Creen que es útil saber qué tan segura está la IA?</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación) ⏰ 1.5 minutos</h3>
+                            <p>Indica a los alumnos que se junten en parejas, muestren cómo Cutebot distingue entre ID1 e ID2 y cómo se muestra la confianza.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien! Con su compañero, muestren cómo su Cutebot reacciona diferente a su ID1 y a su ID2. Si programaron la confianza, muestren cómo se ve. Expliquen: <strong>'Mi Cutebot hace [acción A] con ID1 y [acción B] con ID2. Cuando ve [objeto], dice que está [porcentaje]% seguro.'</strong> El compañero debe observar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Gnius STORM (Reflexión Final) ⏰ 1.5 minutos</h3>
+                            <p>Guía la retroalimentación, enfocándose en la utilidad de la confianza.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, la retroalimentación. Después de ver la demostración de su compañero, díganle: <br>
+                                <strong>* 'Me gustó que tu Cutebot pudiera distinguir entre [objeto ID1 del compañero] y [objeto ID2 del compañero].'</strong><br>
+                                <strong>* 'Es útil ver que la confianza para [objeto] fue de [porcentaje] porque [razón].'</strong><br>
+                                <strong>* 'Para la próxima, sería interesante ver qué confianza da si le muestras los dos objetos a la vez...'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Gnius STORM (Reflexión Final) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11). Cierra la sesión reforzando los conceptos de múltiples clases, confianza y su importancia en IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Increíble trabajo! Han enseñado a su IA a ser una experta en dos objetos y han visto cómo puede expresar su 'confianza'. Entender que la IA puede manejar múltiples categorías (clases) y que sus predicciones vienen con un nivel de seguridad es muy avanzado. El concepto de confianza es muy importante: los desarrolladores de IA lo usan para decidir si deben creer en la predicción de la IA o si necesitan más información. Hoy lograron decir: '<strong>Yo puedo enseñarle a mi A.I. Lens a reconocer dos objetos diferentes, hacer que Cutebot reaccione de forma distinta a cada uno, y entiendo que la IA puede tener un nivel de confianza en lo que reconoce.</strong>' ¡Son unos verdaderos analistas de la inteligencia artificial!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
